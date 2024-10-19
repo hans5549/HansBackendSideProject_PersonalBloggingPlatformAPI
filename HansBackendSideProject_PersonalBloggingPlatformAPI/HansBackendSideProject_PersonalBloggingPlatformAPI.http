@@ -1,0 +1,6 @@
+@HansBackendSideProject_PersonalBloggingPlatformAPI_HostAddress = http://localhost:5126
+
+GET {{HansBackendSideProject_PersonalBloggingPlatformAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
