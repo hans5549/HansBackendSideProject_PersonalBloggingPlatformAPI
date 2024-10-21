@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HansBackendSideProject_PersonalBloggingPlatformAPI", "HansBackendSideProject_PersonalBloggingPlatformAPI\HansBackendSideProject_PersonalBloggingPlatformAPI.csproj", "{EA4F1ED1-7287-4C81-B37F-E05E9C84975E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAPI", "TestAPI\TestAPI.csproj", "{75A8943C-EFA1-4C0A-8B2D-F0D327A6F399}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EA4F1ED1-7287-4C81-B37F-E05E9C84975E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA4F1ED1-7287-4C81-B37F-E05E9C84975E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA4F1ED1-7287-4C81-B37F-E05E9C84975E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A8943C-EFA1-4C0A-8B2D-F0D327A6F399}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A8943C-EFA1-4C0A-8B2D-F0D327A6F399}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A8943C-EFA1-4C0A-8B2D-F0D327A6F399}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A8943C-EFA1-4C0A-8B2D-F0D327A6F399}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
