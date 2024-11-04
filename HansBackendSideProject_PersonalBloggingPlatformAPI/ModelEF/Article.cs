@@ -1,4 +1,4 @@
-﻿namespace HansBackendSideProject_PersonalBloggingPlatformAPI.Model
+﻿namespace HansBackendSideProject_PersonalBloggingPlatformAPI.ModelEF
 {
     public class Article
     {

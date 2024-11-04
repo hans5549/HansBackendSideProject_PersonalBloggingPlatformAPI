@@ -1,6 +1,8 @@
+using System.Configuration;
+using HansBackendSideProject_PersonalBloggingPlatformAPI.ModelEF;
 using HansBackendSideProject_PersonalBloggingPlatformAPI.Repository;
 using HansBackendSideProject_PersonalBloggingPlatformAPI.Service;
-using MongoDB.Driver;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,12 +13,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<IMongoClient>(sp =>
-    new MongoClient(builder.Configuration.GetConnectionString("MongoDb")));
-
-builder.Services.AddSingleton(sp =>
-    sp.GetRequiredService<IMongoClient>().GetDatabase(
-        builder.Configuration["ConnectionStrings:DateBaseName"]));
+builder.Services.AddDbContext<ArticleContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Register services
 builder.Services.AddScoped<ArticleService>();

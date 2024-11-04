@@ -13,8 +13,9 @@ namespace HansBackendSideProject_PersonalBloggingPlatformAPI.Service
             _articleRepository = articleRepository;
         }
 
-        public void GetArticles(DateTime? publisDate, List<string?> tags)
+        public void GetArticles(DateTime? publishDate, List<string?> tags)
         {
+            
         }
     }
 }
