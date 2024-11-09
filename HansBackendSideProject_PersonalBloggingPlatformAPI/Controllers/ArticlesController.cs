@@ -18,7 +18,7 @@ namespace HansBackendSideProject_PersonalBloggingPlatformAPI.Controllers
 
         // GET: api/articles
         [HttpGet]
-        public ActionResult<List<Article>> GetArticles([FromQuery] DateTime? publisDate, [FromQuery] List<string?> tags)
+        public ActionResult<List<Article>> GetArticles([FromQuery] DateTime? publishDate, [FromQuery] List<string?> tags)
         {
             return null;
         }
